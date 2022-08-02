@@ -1,0 +1,11 @@
+flask==2.0.1
+flask-sqlalchemy==2.5.1
+beautifulsoup4==4.11.1
+nltk==3.7
+transformers==4.20.1
+pandas==1.4.1
+requests==2.25.1
+allennlp==0.9.0        
+spacy==2.1.9
+sentence-transformers==2.2.2
+sentencepiece==0.1.96
