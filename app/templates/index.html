@@ -61,9 +61,18 @@
     <label class="h6" for="exampleFormControlTextarea1">Input Text</label>
     <textarea name="itext" class="form-control" placeholder="Input Text?" rows="6" required></textarea>
     </div>    
+    <div>
+      <p>Click on the "Choose File" button to upload a file:</p>
+
+<form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
+    </div>
     <div class="form-group">
     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Choose Question Type</label>
     <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="test_type" required>
+      
     <option value="objective">Objective</option>
     <option value="subjective">Subjective</option>
     <option value="subjective">Fill in the gap</option>
@@ -81,6 +90,208 @@
 </div>
     </div>
 </div>
-</body>
+<div dir="ltr" style="text-align: left;" trbidi="on">
 
-</html>
+  <div class="question">
+  
+  1. What is the full form of the RAM? </div>
+  
+  <ul class="answers">
+  
+  <input id="q1a" name="q1" type="radio" value="a" /> <label for="q1a"> A) Random answer memory </label> <br />
+  
+  <input id="q1b" name="q1" type="radio" value="b" /> <label for="q1b"> B) Random Access Memory </label> <br />
+  
+  <input id="q1c" name="q1" type="radio" value="c" /> <label for="q1c"> C) Random another memory </label> <br />
+  
+  <input id="q1d" name="q1" type="radio" value="d" /> <label for="q1d"> D) Random aces memory </label> <br />
+  
+  </ul>
+  
+  <style>
+  
+  #q1more {display: none;}
+  
+  </style>
+  
+  <span id="q1dots">...</span>
+  
+  <span id="q1more">
+  
+  Answer is B) <br />
+  
+  The full form of RAM is "Random Access Memory"</span><br />
+  
+  <button id="q1mybtn" onclick="q1function()">Show Answer </button>
+  
+  <script>
+  
+  function q1function() {
+  
+  var q1dots = document.getElementById("q1dots");
+  
+  var q1moreText = document.getElementById("q1more");
+  
+  var q1btnText = document.getElementById("q1mybtn");
+  
+  if (q1dots.style.display === "none") {
+  
+  q1dots.style.display = "inline";
+  
+  q1btnText.innerHTML = "Show Answer";
+  
+  q1moreText.style.display = "none";
+  
+  }
+  
+  else {
+  
+  q1dots.style.display = "none";
+  
+  q1btnText.innerHTML = "Hide Answer";
+  
+  q1moreText.style.display = "inline";
+  
+  }
+  
+  }
+  
+  </script>
+  
+  <br />
+  
+  <div class="question">
+  
+  2. What is the Brain of a Computer? </div>
+  
+  <ul class="answers">
+  
+  <input id="q2a" name="q2" type="radio" value="a" /> <label for="q2a"> A) ALU </label> <br />
+  
+  <input id="q2b" name="q2" type="radio" value="b" /> <label for="q2b"> B) CU </label> <br />
+  
+  <input id="q2c" name="q2" type="radio" value="c" /> <label for="q2c"> C) CPU </label> <br />
+  
+  <input id="q2d" name="q2" type="radio" value="d" /> <label for="q2d"> D) RAM </label> <br />
+  
+  </ul>
+  
+  <style>
+  
+  #q2more {display: none;}
+  
+  </style>
+  
+  <span id="q2dots">...</span>
+  
+  <span id="q2more">
+  
+  Answer is C) <br />
+  
+  CPU is called brain of the computer.</span><br />
+  
+  <button id="q2mybtn" onclick="q2function()">Show Answer </button>
+  
+  <script>
+  
+  function q2function() {
+  
+  var q2dots = document.getElementById("q2dots");
+  
+  var q2moreText = document.getElementById("q2more");
+  
+  var q2btnText = document.getElementById("q2mybtn");
+  
+  if (q2dots.style.display === "none") {
+  
+  q2dots.style.display = "inline";
+  
+  q2btnText.innerHTML = "Show Answer";
+  
+  q2moreText.style.display = "none";
+  
+  }
+  
+  else {
+  
+  q2dots.style.display = "none";
+  
+  q2btnText.innerHTML = "Hide Answer";
+  
+  q2moreText.style.display = "inline";
+  
+  }
+  
+  }
+  
+  </script>
+  
+  <br />
+  
+  <div class="question">
+  
+  3. Who is the prime minister of India </div>
+  
+  <ul class="answers">
+  
+  <input id="q3a" name="q3" type="radio" value="a" /> <label for="q3a"> A) Narendra Modi </label> <br />
+  
+  <input id="q3b" name="q3" type="radio" value="b" /> <label for="q3b"> B) Ramnath Konvid </label> <br />
+  
+  <input id="q3c" name="q3" type="radio" value="c" /> <label for="q3c"> C) Amit Shah </label> <br />
+  
+  <input id="q3d" name="q3" type="radio" value="d" /> <label for="q3d"> D) Manmohan Singh </label> <br />
+  
+  </ul>
+  
+  <style>
+  
+  #q3more {display: none;}
+  
+  </style>
+  
+  <span id="q3dots">...</span>
+  
+  <span id="q3more">
+  
+  Answer is A) <br />
+  
+  Narenda Modi is the Prime minister of india.</span><br />
+  
+  <button id="q3mybtn" onclick="q3function()"> Show Answer </button>
+  
+  <script>
+  
+  function q3function() {
+  
+  var q3dots = document.getElementById("q3dots");
+  
+  var q3moreText = document.getElementById("q3more");
+  
+  var q3btnText = document.getElementById("q3mybtn");
+  
+  if (q3dots.style.display === "none") {
+  
+  q3dots.style.display = "inline";
+  
+  q3btnText.innerHTML = "Show Answer";
+  
+  q3moreText.style.display = "none";
+  
+  }
+  
+  else {
+  
+  q3dots.style.display = "none";
+  
+  q3btnText.innerHTML = "Hide Answer";
+  
+  q3moreText.style.display = "inline";
+  
+  }
+  
+  }
+  
+  </script>
+  
+  </div>
